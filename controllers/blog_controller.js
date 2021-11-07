@@ -1,5 +1,5 @@
 exports.getBlogs = (req, res) => {
-  let blogList = [
+  const blogList = [
     { title: 'Blog 1', description: 'This is description of blog 1' },
     { title: 'Blog 2', description: 'This is description of blog 2' },
     { title: 'Blog 3', description: 'This is description of blog 3' },
