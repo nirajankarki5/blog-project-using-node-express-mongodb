@@ -12,4 +12,6 @@ router
 
 router.route('/about').get(blogController.about);
 
+router.route('/blog/:id').get(blogController.getBlogById);
+
 module.exports = router;

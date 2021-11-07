@@ -10,6 +10,12 @@ exports.getBlogs = async (req, res) => {
   res.render('index.ejs', { blogList: blogList });
 };
 
+exports.getBlogById = async (req, res) => {
+  // console.log(req.params);
+  const blog = await Blog.find({ _id: req.params.id });
+  res.render('single_blog.ejs', { blog: blog[0] });
+};
+
 exports.addBlog = (req, res) => {
   res.render('add_page.ejs');
 };
@@ -22,9 +28,7 @@ exports.addNewBlog = async (req, res) => {
   try {
     // you can simply use req.body but it got "[Object: null prototype] { ... }" so using this
     console.log('body is ', JSON.parse(JSON.stringify(req.body)));
-
     const newBlog = await Blog.create(req.body);
-
     // redirect to add blog page once the blog is created
     res.status(201).redirect('/add-blog');
   } catch (err) {

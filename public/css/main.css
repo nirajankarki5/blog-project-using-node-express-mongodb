@@ -1,79 +1,126 @@
 body {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: sans-serif;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* **************** NAVBAR ******************* */
 /***********************************************/
 nav {
-    border-bottom: 1px solid #aaa7a7;
-    /* padding: 0px 20px; */
+  border-bottom: 1px solid #aaa7a7;
+  /* padding: 0px 20px; */
 }
 
 .main-nav {
-    float: right;
-    list-style: none;
-    margin-top: 60px;
+  float: right;
+  list-style: none;
+  margin-top: 60px;
 }
 
 .nav-div {
-    display: inline-block;
-    color: #615f5f;
+  display: inline-block;
+  color: #615f5f;
 }
 
 nav h1 a {
-    text-decoration: none;
-    font-size: 50px;
-    float: left;
-    padding-right: 300px;
-    color: #003566;
+  text-decoration: none;
+  font-size: 50px;
+  float: left;
+  padding-right: 300px;
+  color: #003566;
 }
 
 .main-nav li {
-    display: inline-block;
-    margin-left: 30px;
+  display: inline-block;
+  margin-left: 30px;
 }
 
 .main-nav li a {
-    background-color: #4d908e;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+  background-color: #4d908e;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* **************** BLOG CARD ******************* */
+/***********************************************/
+.blog-card {
+  display: inline-block;
+  width: 550px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+  background-color: #fafafa;
+  border: #b3b1b1 solid 1px;
+  border-radius: 5px;
+}
+
+.blog-card h3 {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.blog-card p {
+  margin: 15px 0px;
+  font-size: 18px;
+}
+
+.blog-card a {
+  text-decoration: none;
+  color: #4d908e;
+}
+
+/* **************** SINGLE BLOG ******************* */
+/***********************************************/
+.single-blog h3 {
+  margin: 0%;
+  margin-top: 30px;
+  font-size: 35px;
+  color: #4d908e;
+}
+
+.short {
+  display: inline-block;
+  font-size: 22px;
+  border-bottom: #4d908e dashed 1px;
+}
+
+.desc {
+  font-size: 18px;
 }
 
 /* **************** ADD BLOG ******************* */
 /***********************************************/
 .add-form {
-    width: 60%;
-    margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 }
 
 label {
-    display: inline-block;
-    padding: 15px 0px 5px 0px;
+  display: inline-block;
+  padding: 15px 0px 5px 0px;
 }
 
-input[type="text"],
+input[type='text'],
 textarea {
-    width: 100%;
-    padding: 15px;
-    border-radius: 3px;
-    border: 1px solid #ccc
+  width: 100%;
+  padding: 15px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
 }
 
-input[type="submit"] {
-    background-color: #4d908e;
-    padding: 10px 35px;
-    display: block;
-    margin: 10px auto;
-    border: none;
-    color: white;
+input[type='submit'] {
+  background-color: #4d908e;
+  padding: 10px 35px;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  color: white;
 }
