@@ -19,4 +19,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', blogRouter);
 
+// 404 error page display
+app.use((req, res) => {
+  res.status(404).render('404.ejs');
+});
+
 module.exports = app;
