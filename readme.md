@@ -3,7 +3,7 @@
 * EJS template was used
 
 ### Screenshots:
-![](Screenshots/home.png)
-![](Screenshots/singlePage.png)
-![](Screenshots/addBlog.png)
-![](Screenshots/about.png)
+![](screenshots/home.png)
+![](screenshots/singlePage.png)
+![](screenshots/addBlog.png)
+![](screenshots/about.png)
