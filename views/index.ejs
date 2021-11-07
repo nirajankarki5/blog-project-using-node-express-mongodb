@@ -13,7 +13,7 @@
     <h2>All BLOGS</h2>
     <% blogList.forEach(blog => { %>
         <h3><%= blog.title %></h3>
-        <p><%= blog.description %></p>
+        <p><%= blog.shortDesc %></p>
     <% }) %>
 
    <%- include('./partials/footer.ejs') %>
