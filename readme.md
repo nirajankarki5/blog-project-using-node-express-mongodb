@@ -3,7 +3,11 @@
 * EJS template was used
 
 ### Screenshots:
+* Home page
 ![](screenshots/home.png)
+* Single blog page
 ![](screenshots/singlePage.png)
+* Add blog page
 ![](screenshots/addBlog.png)
+* About page
 ![](screenshots/about.png)
