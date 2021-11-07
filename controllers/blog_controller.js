@@ -14,3 +14,9 @@ exports.addBlog = (req, res) => {
 exports.about = (req, res) => {
   res.render('about.ejs');
 };
+
+exports.addNewBlog = (req, res) => {
+  // you can simply use req.body but it got "[Object: null prototype] { ... }" so using this
+  console.log('body is ', JSON.parse(JSON.stringify(req.body)));
+  res.redirect('/add-blog');
+};
