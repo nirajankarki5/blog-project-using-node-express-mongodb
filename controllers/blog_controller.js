@@ -26,8 +26,6 @@ exports.about = (req, res) => {
 
 exports.addNewBlog = async (req, res) => {
   try {
-    // you can simply use req.body but it got "[Object: null prototype] { ... }" so using this
-    console.log('body is ', JSON.parse(JSON.stringify(req.body)));
     const newBlog = await Blog.create(req.body);
     // redirect to add blog page once the blog is created
     res.status(201).redirect('/add-blog');
